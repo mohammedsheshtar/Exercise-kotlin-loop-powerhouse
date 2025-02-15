@@ -13,6 +13,11 @@ fun main() {
     println("\n\nPart 3");
     val numbers: IntArray = intArrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
     println("[*] sum of 1 through 10: ${calculateSum(numbers)}");
+
+    // part 4
+    println("\nPart 4");
+    checkEvenOdd(10);
+
 }
 
 fun countUpwards(start: Int, end: Int) {
@@ -45,4 +50,14 @@ fun calculateSum(numbers: IntArray): Int {
         sum += temp;
     }
     return sum;
+}
+
+fun checkEvenOdd(number: Int) {
+    for(i in 1..number) {
+        if(i % 2 == 0) {
+            println("even number: ${i}");
+        } else {
+            println("odd number: ${i}")
+        }
+    }
 }
