@@ -69,6 +69,7 @@ fun checkEvenOdd(number: Int) {
 
 fun calculateFactorial(number: Int): Int {
     if(number == 1) {
+
         return 1;
     }
     return number * calculateFactorial(number-1);
