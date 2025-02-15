@@ -18,6 +18,11 @@ fun main() {
     println("\nPart 4");
     checkEvenOdd(10);
 
+    // part 5
+    println("\nPart 5");
+    val num = 5
+    println("[*] $num! = ${calculateFactorial(num)}");
+
 }
 
 fun countUpwards(start: Int, end: Int) {
@@ -60,4 +65,11 @@ fun checkEvenOdd(number: Int) {
             println("odd number: ${i}")
         }
     }
+}
+
+fun calculateFactorial(number: Int): Int {
+    if(number == 1) {
+        return 1;
+    }
+    return number * calculateFactorial(number-1);
 }
