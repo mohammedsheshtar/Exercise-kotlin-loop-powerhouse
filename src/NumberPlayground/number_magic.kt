@@ -38,12 +38,15 @@ fun countUpwards(start: Int, end: Int) {
 
 fun countDownwards(start: Int, end: Int) {
     print("[*] ");
-    for (i in end downTo start) {
-        if(i != 10) {
-            print(", $i");
-        } else {
-            print(i);
+    var fin = end;
+    while(fin >= start) {
+        if (fin != 10) {
+            print(", $fin");
         }
+        else {
+            print(fin);
+        }
+        fin--
     }
 }
 
